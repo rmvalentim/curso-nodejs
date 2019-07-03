@@ -1,0 +1,12 @@
+<h1>Lista de Posts</h1>
+<a href="/cad"><button class="tertiary">Novo Post</button></a>
+<hr>
+
+{{#each posts}}
+    <small>{{createdAt}}</small>
+    <h2>{{titulo}}</h2>
+    <p>{{conteudo}}</p>
+    <a href="/deletar/{{id}}"><button class="small">Excluir</button></a> 
+    <a href="/editar/{{id}}"><button class="small">Editar</button></a>
+    <hr>
+{{/each}}
